@@ -1,0 +1,226 @@
+@import url('./variables.css');
+
+.bg-primary-theme {
+  background-color: var(--pink-bg-muted);
+}
+
+.bg-pink-soft {
+  background-color: var(--pink-bg-soft);
+}
+
+.text-primary-darker-theme {
+  color: var(--pink-text-heading);
+}
+.text-muted{
+ color: var(--color-text-muted);
+ }
+.flex {
+  display: flex;
+}
+
+.w-full {
+  width: 100%;
+}
+
+.h-full {
+  height: 100%;
+}
+
+.w-2 {
+  width: 2px;
+}
+
+.w-xxs {
+  width: var(--width-xxs);
+}
+
+.h-xxs {
+  height: var(--width-xxs);
+}
+
+
+.w-xs {
+  width: var(--width-xs);
+}
+
+.h-xs {
+  height: var(--width-xs);
+}
+
+.w-sm {
+  width: var(--width-sm);
+}
+
+.h-sm {
+  height: var(--width-sm);
+}
+
+.w-md {
+  width: var(--width-md);
+}
+
+.h-md {
+  height: var(--width-md);
+}
+
+.w-lg {
+  width: var(--width-lg);
+}
+
+.h-lg {
+  height: var(--width-lg);
+}
+
+
+.w-container {
+  width: var(--width-container-lg);
+}
+
+.mx-auto {
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.self-center {
+  align-self: center;
+}
+
+.justify-self-center {
+  justify-self: center;
+}
+
+.grid {
+  display: grid;
+}
+
+.grid-center {
+  justify-content: center;
+}
+
+
+.grid-cols-2 {
+  grid-template-columns: 1fr 1fr;
+}
+
+.grid-cols-1_3 {
+  grid-template-columns: var(--width-third) auto;
+}
+
+.grid-cols-fit-auto {
+  grid-template-columns: min-content auto;
+}
+
+.gap-1 {
+  gap: var(--space-1);
+}
+
+.gap-2 {
+  gap: var(--space-2);
+}
+
+.gap-4 {
+  gap: var(--space-4);
+}
+
+.rounded-all {
+  border-radius: var(--radius-round);
+}
+
+.border {
+  border: 1px solid;
+}
+
+.border-2 {
+  border: 2px solid;
+}
+
+.border-5 {
+  border: 5px solid;
+}
+
+.border-left-2 {
+  border-left: 2px solid;
+}
+
+.border-black {
+  border-color: var(--black);
+}
+
+.border-pink-soft {
+  border-color: var(--pink-bg-soft);
+}
+
+.text-4xl {
+  font-size: var(--fontsize-4xl);
+}
+
+.text-2xl {
+  font-size: var(--fontsize-2xl);
+}
+
+.text-lg {
+  font-size: var(--fontsize-lg);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.body {
+  font-size: var(--fontsize-md);
+}
+
+.object-contain {
+  object-fit: contain;
+}
+
+.object-cover {
+  object-fit: cover;
+}
+
+/*padding*/
+.p-0{
+padding: 0px;
+}
+.px-sm {
+  padding: 0px var(--space-2);
+}
+
+.px-md {
+  padding: 0px var(--space-4);
+}
+
+.px-lg {
+  padding: 0px var(--space-6);
+}
+
+.px-xl {
+  padding: 0px var(--space-10);
+}
+
+
+.py-sm {
+  padding: var(--space-2) 0px;
+}
+
+.py-md {
+  padding: var(--space-4) 0px;
+}
+
+.py-lg {
+  padding: var(--space-6) 0px;
+}
+
+.py-xl {
+  padding: var(--space-10) 0px;
+}
+
+/* list */
+
+.list-none {
+  list-style-type: none;
+}
+/* href */
+.link-none{
+ text-decoration:none;
+}
