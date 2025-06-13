@@ -1,5 +1,26 @@
 @import url('./variables.css');
 
+body {
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+}
+
+ul,
+p,
+h1,
+h2,
+h3,
+h4,
+h5 {
+  padding: 0px;
+  margin: 0px;
+}
+
 .bg-primary-theme {
   background-color: var(--pink-bg-muted);
 }
@@ -11,19 +32,51 @@
 .text-primary-darker-theme {
   color: var(--pink-text-heading);
 }
-.text-muted{
- color: var(--color-text-muted);
- }
-.flex {
-  display: flex;
+
+.text-muted {
+  color: var(--color-text-muted);
 }
 
+.text-black {
+  color: var(--black);
+}
+.text-base{
+ color: var(--base);
+}
+.uppercase{
+  text-transform: uppercase;
+}
+.leading-1{
+ line-height: 1.6rem;
+}
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+}
+.min-h-screen{
+ min-height: 100vh;
+}
+.min-w-screen{
+ min-width: 100vw;
+}
 .w-full {
   width: 100%;
 }
 
 .h-full {
   height: 100%;
+}
+
+.h-screen {
+  height: 100vh;
+}
+
+.w-fit {
+  width: min-content;
+}
+
+.h-fit {
+  height: min-content;
 }
 
 .w-2 {
@@ -70,10 +123,39 @@
 .h-lg {
   height: var(--width-lg);
 }
+.w-xl{
+  width: var(--width-xl);
+}
+
+.h-xl{
+  height: var(--width-xl);
+}
+
 
 
 .w-container {
   width: var(--width-container-lg);
+}
+
+.w-90-percent {
+  width: 70%;
+
+}
+
+.w-95-percent {
+  width: 85%;
+
+}
+
+
+.ml-auto {
+
+  margin-left: auto;
+}
+
+.mr-auto {
+
+  margin-right: auto;
 }
 
 .mx-auto {
@@ -111,16 +193,30 @@
 }
 
 .gap-1 {
-  gap: var(--space-1);
+  gap: var(--space-2);
 }
 
 .gap-2 {
-  gap: var(--space-2);
+  gap: var(--space-3);
 }
 
 .gap-4 {
   gap: var(--space-4);
 }
+
+.gap-6 {
+  gap: var(--space-6);
+}
+
+.gap-8 {
+  gap: var(--space-8);
+}
+
+.gap-10 {
+  gap: var(--space-10);
+}
+
+
 
 .rounded-all {
   border-radius: var(--radius-round);
@@ -149,6 +245,11 @@
 .border-pink-soft {
   border-color: var(--pink-bg-soft);
 }
+.text-6xl {
+  font-size: calc(3*var(--fontsize-6xl));
+  letter-spacing: 5px;
+}
+
 
 .text-4xl {
   font-size: var(--fontsize-4xl);
@@ -162,8 +263,24 @@
   font-size: var(--fontsize-lg);
 }
 
+.text-md {
+  font-size: var(--fontsize-md);
+}
+
+.text-xs {
+  font-size: var(--fontsize-xs);
+}
+
+.font-bold {
+  font-weight: var(--font-weight-bold);
+}
+
 .text-center {
   text-align: center;
+}
+
+.text-wrap {
+  overflow-wrap: break-word;
 }
 
 .body {
@@ -179,11 +296,16 @@
 }
 
 /*padding*/
-.p-0{
-padding: 0px;
+.p-0 {
+  padding: 0px;
 }
+
+.px-1 {
+  padding: 0px var(--space-1);
+}
+
 .px-sm {
-  padding: 0px var(--space-2);
+  padding: 0px var(--space-3);
 }
 
 .px-md {
@@ -198,9 +320,20 @@ padding: 0px;
   padding: 0px var(--space-10);
 }
 
+.pt-xl {
+  padding-top: var(--space-10);
+}
+
+.pt-sm {
+  padding-top: var(--space-3);
+}
+
+.pb-md {
+  padding-bottom: var(--space-4);
+}
 
 .py-sm {
-  padding: var(--space-2) 0px;
+  padding: var(--space-3) 0px;
 }
 
 .py-md {
@@ -214,13 +347,118 @@ padding: 0px;
 .py-xl {
   padding: var(--space-10) 0px;
 }
+.py-2xl {
+  padding: var(--space-12) 0px;
+}
+.py-3xl {
+  padding: var(--space-16) 0px;
+}
+
+
 
 /* list */
-
 .list-none {
   list-style-type: none;
 }
+
 /* href */
-.link-none{
- text-decoration:none;
+.link-none {
+  text-decoration: none;
+}
+
+/* cursor */
+.cursor-pointer {
+  cursor: pointer;
+}
+
+/* media queries */
+@media screen and (max-width:680px) {
+
+  /*padding*/
+  .px-1 {
+    padding: 0px var(--space-1);
+  }
+
+  .px-sm {
+    padding: 0px var(--space-3);
+  }
+
+  .px-md {
+    padding: 0px var(--space-4);
+  }
+
+  .px-lg {
+    padding: 0px var(--space-5);
+  }
+
+  .px-xl {
+    padding: 0px var(--space-6);
+  }
+
+  .pb-md {
+    padding-bottom: var(--space-4);
+  }
+
+  .py-sm {
+    padding: var(--space-2) 0px;
+  }
+
+  .py-lg {
+    padding: var(--space-5) 0px;
+  }
+
+  .py-xl {
+    padding: var(--space-6) 0px;
+  }
+
+  .w-container {
+    width: var(--width-container-sm);
+  }
+
+  .w-90-percent {
+    width: 90%;
+
+  }
+
+  .w-95-percent {
+    width: 95%;
+  }
+
+  .grid-cols-2 {
+    grid-template-columns: none;
+  }
+
+  .grid-cols-1_3 {
+    grid-template-columns: none;
+  }
+
+  .grid-cols-fit-auto {
+    grid-template-columns: none;
+  }
+
+  .gap-10 {
+    gap: var(--space-8);
+  }
+
+  .text-4xl {
+    font-size: var(--fontsize-3xl);
+  }
+
+  .text-2xl {
+    font-size: var(--fontsize-2xl);
+  }
+
+  .text-lg {
+    font-size: var(--fontsize-lg);
+  }
+
+  .text-md {
+    font-size: var(--fontsize-md);
+  }
+
+  .text-xs {
+    font-size: var(--fontsize-xs);
+  }
+
+
 }

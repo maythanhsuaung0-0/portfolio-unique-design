@@ -1,7 +1,7 @@
 :root {
   /* Colors */
   /* Base colors */
-  --black:#000000;
+  --black: #000000;
   --pink-bg-lightest: #fdf2f8;
   /* Tailwind pink-50 */
   --pink-bg-muted: #fce7f3;
@@ -33,21 +33,32 @@
   --color-info: #17a2b8;
   --color-text: #1f1f1f;
   --color-text-muted: #6b6b6b;
-
+  /* common colors */
+  --base:#1E1E1E ;
   /* Typography */
   --font-family-sans: 'Inter', sans-serif;
   --font-family-mono: 'Fira Code', monospace;
 
---fontsize-xs: 0.875rem;   /* 14px */
-  --fontsize-sm: 1rem;       /* 16px */
-  --fontsize-md: 1.125rem;   /* 18px */
-  --fontsize-lg: 1.25rem;    /* 20px */
-  --fontsize-xl: 1.5rem;     /* 24px */
-  --fontsize-2xl: 1.875rem;  /* 30px */
-  --fontsize-3xl: 2.25rem;   /* 36px */
-  --fontsize-4xl: 3rem;      /* 48px */
-  --fontsize-5xl: 3.75rem;   /* 60px */
-  --fontsize-6xl: 4.5rem;    /* 72px */
+  --fontsize-xs: 0.875rem;
+  /* 14px */
+  --fontsize-sm: 1rem;
+  /* 16px */
+  --fontsize-md: 1.125rem;
+  /* 18px */
+  --fontsize-lg: 1.25rem;
+  /* 20px */
+  --fontsize-xl: 1.5rem;
+  /* 24px */
+  --fontsize-2xl: 1.875rem;
+  /* 30px */
+  --fontsize-3xl: 2.25rem;
+  /* 36px */
+  --fontsize-4xl: 3rem;
+  /* 48px */
+  --fontsize-5xl: 3.75rem;
+  /* 60px */
+  --fontsize-6xl: 4.5rem;
+  /* 72px */
 
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
@@ -59,28 +70,41 @@
 
   /* Spacing */
   --space-0: 0;
-  --space-1: 0.5rem;     /* 8px */
-  --space-2: 1rem;       /* 16px */
-  --space-3: 1.5rem;     /* 24px */
-  --space-4: 2rem;       /* 32px */
-  --space-5: 2.5rem;     /* 40px */
-  --space-6: 3rem;       /* 48px */
-  --space-8: 4rem;       /* 64px */
-  --space-10: 5rem;      /* 80px */
-  --space-12: 6rem;      /* 96px */
-  --space-16: 8rem;      /* 128px */
-  --space-20: 10rem;     /* 160px */
-  --space-24: 12rem;     /* 192px */
-  --space-32: 16rem;     /* 256px */
-  
-   /* Border radius */
+  --space-1: 0.2rem;
+  /* 8px */
+  --space-2: 0.5rem;
+  /* 16px */
+  --space-3: 1rem;
+  /* 24px */
+  --space-4: 2rem;
+  /* 32px */
+  --space-5: 2.5rem;
+  /* 40px */
+  --space-6: 3rem;
+  /* 48px */
+  --space-8: 4rem;
+  /* 64px */
+  --space-10: 5rem;
+  /* 80px */
+  --space-12: 6rem;
+  /* 96px */
+  --space-16: 8rem;
+  /* 128px */
+  --space-20: 10rem;
+  /* 160px */
+  --space-24: 12rem;
+  /* 192px */
+  --space-32: 16rem;
+  /* 256px */
+
+  /* Border radius */
   --radius-sm: 4px;
   --radius-md: 8px;
   --radius-lg: 12px;
   --radius-round: 9999px;
 
   /* Shadows */
-  --shadow-sm: 0 1px 2px rgba(0, 0, 0, 0.05);
+  --shadow-sm: 0 1px 2px rgba(255, 255, 255, 0.05);
   --shadow-md: 0 4px 6px rgba(0, 0, 0, 0.1);
   --shadow-lg: 0 10px 15px rgba(0, 0, 0, 0.15);
 
@@ -89,16 +113,23 @@
   --z-dropdown: 10;
   --z-modal: 100;
   --z-toast: 1000;
-/* Max Widths for Layouts */
-  --width-container-xs: 320px;    /* mobile */
-  --width-container-sm: 480px;    /* small devices */
-  --width-container-md: 768px;    /* tablets */
-  --width-container-lg: 1024px;   /* desktops */
-  --width-container-xl: 1280px;   /* wide screens */
-  --width-container-2xl: 1536px;  /* extra-wide screens */
+  /* Max Widths for Layouts */
+  --width-container-xs: 320px;
+  /* mobile */
+  --width-container-sm: 480px;
+  /* small devices */
+  --width-container-md: 768px;
+  /* tablets */
+  --width-container-lg: 1024px;
+  /* desktops */
+  --width-container-xl: 1280px;
+  /* wide screens */
+  --width-container-2xl: 1536px;
+  /* extra-wide screens */
 
   /* Component Sizes */
-  --width-button-sm: 6rem;        /* ~96px */
+  --width-button-sm: 6rem;
+  /* ~96px */
   --width-button-md: 8rem;
   --width-button-lg: 12rem;
 
@@ -107,13 +138,19 @@
   --width-input-lg: 24rem;
 
   /* Fixed Utility Widths */
-  --width-xxs:1rem;
-  --width-xs: 1.5rem;   /* 64px */
-  --width-sm: 2.5rem;   /* 128px */
-  --wdith-base:4rem;
-  --width-md: 8rem;  /* 256px */
-  --width-lg: 16rem;  /* 384px */
-  --width-xl: 32rem;  /* 512px */
+  --width-xxs: 1rem;
+  --width-xs: 1.5rem;
+  /* 64px */
+  --width-sm: 2.5rem;
+  /* 128px */
+  --wdith-base: 4rem;
+  --width-md: 8rem;
+  /* 256px */
+  --width-lg: 16rem;
+  --width-xl:20rem;
+  /* 384px */
+  --width-xxl: 32rem;
+  /* 512px */
 
   /* Percentages */
   --width-third: 33.3333%;
