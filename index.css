@@ -31,7 +31,9 @@ h5,
 h6 {
   font-weight: var(--font-weight-medium);
 }
-
+.overflow-hidden{
+  overflow: hidden;
+}
 .bg-primary-theme {
   background-color: var(--pink-bg-lightest);
 }
