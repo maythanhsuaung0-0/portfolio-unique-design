@@ -5,12 +5,17 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+  <meta http-equiv="Pragma" content="no-cache" />
+  <meta http-equiv="Expires" content="0" />
 
   <title>MayAung</title>
   <link rel="stylesheet" href="index.css" type="text/css">
   <link rel="stylesheet" href="specific-designs.css" type="text/css">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+    rel="stylesheet">
   <link
     href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
     rel="stylesheet">
@@ -19,50 +24,62 @@
 <body class="bg-primary-theme">
   <div class="w-90-percent mx-auto">
     <div class="py-sm">
-      <ul class="list-none flex gap-2 text-md">
-        <li class="ml-auto"><a href="#main" class="link-none cursor-pointer text-primary-darker-theme ">Home</a></li>
+      <ul class="list-none w-full flex gap-2 text-md">
+        <li class="ml-auto"><a href="#main" class="link-none cursor-pointer   link-design">Home</a></li>
         <li>
-          <a href="#about" class="link-none link-design cursor-pointer text-primary-darker-theme">About</a>
+          <a href="#about" class="link-none link-design cursor-pointer  ">About</a>
         </li>
         <li>
-          <a href="#projects" class="link-none link-design cursor-pointer text-primary-darker-theme">
+          <a href="#projects" class="link-none link-design cursor-pointer  ">
             Projects</a>
         </li>
       </ul>
     </div>
     <main class="grid ">
       <div class="self-center justify-self-center grid gap-10 ">
-        <div class="h-screen grid">
-          <h1 class="text-6xl text-base self-center flex gap-1 mx-auto text-center brand">
+        <div class="h-screen grid brand">
+          <h1 class="relative text-6xl text-base self-center flex gap-1 mx-auto text-center ">
+
+            <img src="./public/smile.svg" class="doodle-top w-md h-md" alt="smile">
+            <span class="font-bold doodle-text text-xs">May's</span>
             <span> Port</span><span>folio</span>
+            <img src="./public/plant.svg" class="doodle-right absolute w-md h-md" alt="plant">
           </h1>
         </div>
-        <div class="grid grid-center h-screen ">
+        <div class="grid grid-center max-h-screen h-screen ">
           <div class="grid grid-cols-fit-auto gap-6 justify-self-center ">
-            <img src="./public/me_in_museum.jpg" alt="my_photo"
-              class="rounded-all justify-self-center self-center border-5 border-pink-soft w-xl h-xl object-cover ">
+            <div class="relative w-xl h-xl self-center justify-self-center">
+              <img src="./public/circle.svg" width="" alt="" class="circle">
+              <img src="./public/me_in_museum.jpg" alt="my_photo"
+                class="rounded-all me justify-self-center self-center w-xl h-xl object-cover ">
+            </div>
             <div class="self-center text-lg grid gap-2 ">
-              <p class="leading-1">
-                Hi there ~ <br />
-                My name is May Than Hsu Aung aka May.<br/>
-I'm a front-end developer with around three years of experience building fast, responsive, and user-centered web applications. 
-               <br/>
-I love coding, especially in Neovim, as it gives me a streamlined, highly customizable environment that keeps me focused and efficient.
+              <p class="leading-1 ">
+              <div class="relative w-lg "> Hi there ~
+                <img src="./public/heart.svg" class="right-0 bottom-0 w-xs h-xs" alt="">
+              </div> My name is May Than Hsu Aung aka May.<br />
+              I'm a front-end developer with around three years of experience building fast, responsive, and
+              user-centered web applications.
+              <br />
+              I love coding, especially in Neovim, as it gives me a streamlined, highly customizable environment that
+              keeps me focused and efficient.
               </p>
-              <p>
+              <p class="relative">
 
-Objective:I’m always looking for opportunities to push my limits, learn new technologies, and grow through meaningful challenges.
+                Objective:I’m always looking for opportunities to push my limits, learn new technologies, and grow
+                through meaningful challenges.
+                <img src="./public/spark.svg" class="right-0 doodle-bottom right-0 absolute w-sm h-sm" alt="">
               </p>
             </div>
           </div>
         </div>
       </div>
     </main>
-    <section id="about" class="grid grid-cols-2 gap-1 pb-md">
-      <div>
-        <div class="grid gap-2 pb-md">
+    <section id="about" class="grid grid-cols-2 gap-4 py-2xl">
+      <div id="left" class="grid gap-8">
+        <div class="grid gap-4 ">
           <h2 class="uppercase">Contact</h2>
-          <ul class="list-none grid gap-1">
+          <ul class="list-none grid   font-thin gap-1 text-base">
             <li class="flex gap-1">
               <svg class="self-center justify-self-center" width="24px" height="24px" viewBox="0 0 24 24" fill="none"
                 xmlns="http://www.w3.org/2000/svg">
@@ -137,156 +154,268 @@ Objective:I’m always looking for opportunities to push my limits, learn new te
             </li>
           </ul>
         </div>
-        <div class="py-md grid gap-2">
-          <h2 class="uppercase">Work Experience</h2>
-          <ul class="list-none p-0 grid gap-1">
-            <li>
-              <div class="grid grid-cols-1_3 gap-1 ">
-                <span class="text-primary-darker-theme">Jun 2022 - Dec 2022</span>
-                <div>
-                  <div class="font-bold text-md">Frontend Developer</div>
-                  <div class="text-md">Pohmal Carrier Service</div>
-                  <i class="text-md ">Mandalay, Myanmar</i>
-                </div>
-            </li>
-
-
-            <li>
-              <div class="grid grid-cols-1_3 gap-1">
-
-                <span class="text-primary-darker-theme">Jan 2021 - Mar 2022</span>
-                <div>
-                  <div class="font-bold text-md">Frontend Developer</div>
-                  <div class="text-md">Nawphire</div>
-
-                  <i class="text-md ">Mandalay, Myanmar</i>
-                </div>
-            </li>
-            <li>
-              <div class="grid grid-cols-1_3 gap-1">
-
-                <span class="text-primary-darker-theme">July 2020 - Dec 2020</span>
-                <div>
-                  <div class="font-bold text-md">Frontend Developer Intern</div>
-                  <div class="text-md">THtwin Innovation Lab</div>
-                  <i class="text-md ">Technological University Mandalay, Myanmar</i>
-                </div>
-            </li>
-
-          </ul>
-        </div>
-
-        <div class="py-md grid gap-2">
+        <div class="grid gap-4">
           <h2 class="uppercase">Education</h2>
-          <ul class="list-none p-0 grid gap-1">
-            <li class="grid ">
-              <span class="text-primary-darker-theme">2025 - current</span>
-              <div>
-                <span class="text-md">New York City College of Technology,</span>
-                <i class="text-md">New York, United States</i>
+          <ul class="list-none p-0 grid gap-2">
+            <li class="grid grid-cols-fit-auto gap-1 ">
+              <div class="  min-w-md date">2025 - current</div>
+              <div class="flex gap-1">
+                <span class="text-md font-thin  ">New York City College of Technology,</span>
+                <span class="text-md font-thin  ">New York, United States</span>
               </div>
             </li>
-
-
-            <li class="grid ">
-              <span class="text-primary-darker-theme">2023 - 2024</span>
+            <li class="grid grid-cols-fit-auto gap-1 ">
+              <span class="  min-w-md date">2023 - 2024</span>
               <div>
-                <span class="text-md">Nanyang Polytechnics, </span>
-                <i class="text-md">Singapore</i>
+                <span class="font-thin text-md  ">Nanyang Polytechnics, </span>
+                <span class="font-thin text-md  ">Singapore</span>
               </div>
             </li>
           </ul>
         </div>
-        <div class="grid gap-2 py-md">
-          <h2 class="uppercase">Skills</h2>
+        <div class="grid gap-4 ">
+          <h2 class="uppercase  ">Achievements</h2>
+          <ul class="list-none ">
+            <li class="grid gap-1 pb-lg">
+              <h4 class="font-semibold  text-md uppercase">1st Runner Up for SIT Hackathon</h4>
+              <i class="text-xs  ">2024 SIT Hackathon, Nanyang Polytechnics, Singapore </i>
+              <div class="text-md grid gap-1  leading-1 font-thin">
+                <p>
+                  Me and My team participated in a Hackathon held by SIT, NYP where we developed a virtual crypto
+                  stock
+                  market
+                  web application.
+                  It allows user to log in, track market trends , and simulate trading without using real money
+                  providing a risk-free environment to gain
+                  hand-on experience.
+                </p>
+                <p>
+                  We built it using reactjs, material UI for frontend, nodejs and expressJs for backend and mysql, AWS
+                  for
+                  database and storage management.
+                </p>
+              </div>
+            </li>
+
+            <li class="grid gap-1 pb-md">
+              <h4 class=" uppercase text-md font-semibold">3 consecutive terms of Dean's List </h4>
+              <i class="text-xs  ">2023 - 2024, Nanyang Polytechnics, Singapore</i>
+              <p class="text-md   font-thin leading-1">
+                During 3 semesters of NYP, I was awarded Dean's List as I achieved GPA of 3.83, 3.87 and 3.89
+                respectively.
+              </p>
+            </li>
+
+          </ul>
+
+        </div>
+      </div>
+      <div id="right" class="grid gap-8 h-fit ">
+        <div class="grid gap-4">
+          <h2 class="uppercase">Work Experience</h2>
+
+          <ul class="list-none p-0 ">
+            <li>
+              <div class="gap-1 grid grid-cols-fit-auto">
+                <div class="px-md min-w-sm parent relative ">
+                  <div class="left-bar "></div>
+                  <div class="  date mid-child">Jun 2022 -<br /> Dec 2022</div>
+                </div>
+
+
+                <div class="grid gap-1 pb-lg">
+                  <h4 class="text-md uppercase font-semibold">Pohmal Carrier Service </h4>
+                  <div class="flex gap-1">
+                    <span class="text-md ">Frontend Developer
+                    </span>
+                    <i class="text-xs self-center  ">Mandalay, Myanmar</i>
+                  </div>
+                  <p class="  font-thin leading-1 text-md">
+
+                    Developed admin dashboards and client apps for Pohmal Carrier Service using Next.js, React, Node.js,
+                    and Material UI. Improved performance through optimized REST API calls and collaborated with
+                    cross-functional teams in an Agile environment.
+                  </p>
+                </div>
+            </li>
+
+
+            <li>
+              <div class="gap-1 grid grid-cols-fit-auto">
+                <div class="px-md min-w-sm parent relative">
+                  <div class="left-bar "></div>
+                  <div class="date  mid-child">
+                    Jan 2021 -<br /> Mar 2022
+                  </div>
+                </div>
+
+                <div class="grid gap-1 pb-lg">
+                  <h4 class="text-md font-semibold uppercase">Nawphire.LTD</h4>
+
+                  <div class="flex gap-1">
+                    <span class="text-md">Frontend Developer</span>
+
+                    <i class="text-xs self-center  ">Mandalay, Myanmar</i>
+                  </div>
+                  <p class="  font-thin leading-1 text-md">
+                    Developed responsive web apps from UI prototypes using Next.js, React, and Tailwind CSS. Optimized
+                    CMS and API integrations, improving speed by 30% and cutting costs by 10%. Collaborated across teams
+                    to ensure performance and design alignment.
+                  </p>
+                </div>
+            </li>
+            <li>
+              <div class="gap-1 grid grid-cols-fit-auto">
+                <div class="px-md min-w-sm parent relative">
+                  <div class="left-bar "></div>
+                  <div class="  date mid-child">
+                    July 2020 - <br />Dec 2020
+                  </div>
+                </div>
+
+                <div class="grid gap-1 pb-sm">
+                  <h4 class="text-md uppercase font-semibold">THtwin Innovation Lab</h4>
+
+                  <div class="flex gap-1">
+                    <span class="text-md">Internship</span>
+
+                    <i class="text-xs self-center  ">Technological University Mandalay, Myanmar</i>
+                  </div>
+                  <p class="font-thin   leading-1 text-md">
+
+
+                    Interned in an Agile team, using GitHub and Azure DevOps to build UI pages with HTML, CSS, and React
+                    based on UI/UX designs. The experience deepened my interest in front-end development.
+                  </p>
+                </div>
+            </li>
+          </ul>
+
+
+        </div>
+        <div class="grid gap-2 w-95-percent justify-self-center self-center">
+          <h2 class="uppercase  ">Skills</h2>
           <div class="flex gap-1">
-            <img class="w-sm h-sm " src="./public/html5.svg" alt="html5">
-            <img class="w-sm h-sm" src="./public/css.svg" alt="">
-            <img class="w-sm h-sm" src="./public/node.svg" alt="node">
-            <img class="w-sm h-sm" src="./public/ts.svg" alt="ts">
-            <img class="w-sm h-sm" src="./public/linux.svg" alt="">
-            <img src="./public/nvim.svg" class="w-sm h-sm" alt="">
-            <img src="./public/csharp.svg" class="w-sm h-sm" alt="c#">
-            <img src="./public/py.svg" alt="python" class="w-sm h-sm">
-            <img src="./public/rust.svg" class="w-sm h-sm" alt="rust">
-            <img src="./public/database.svg" class="w-sm h-sm" alt="database">
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/html5/html5-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/css3/css3-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/nodejs/nodejs-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/typescript/typescript-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/javascript/javascript-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/python/python-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/csharp/csharp-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/django/django-plain.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/java/java-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/rust/rust-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/mysql/mysql-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/postgresql/postgresql-original.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/tailwindcss/tailwindcss-original-wordmark.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/linux/linux-plain.svg" />
+
+            <img class="w-sm h-sm "
+              src="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/icons/neovim/neovim-original.svg" />
 
           </div>
         </div>
       </div>
-      <div>
-        <div class="grid gap-2 pb-md">
-          <h2 class="uppercase">Achievements</h2>
-          <div class="grid grid-cols-fit-auto">
-            <div class="px-md">
-              <div class="w-2 h-full bg-pink-soft "></div>
-            </div>
-            <ul class="list-none grid gap-4">
-              <li class="grid gap-1">
-                <h4 class="text-primary-darker-theme">1st Runner Up for SIT Hackathon</h4>
-                <i class="text-xs">2024 SIT Hackathon, Nanyang Polytechnics, Singapore </i>
-                <p class="text-md">
-                  Me and My team participated in a Hackathon held by SIT, NYP. We build a crypto stock virtual market
-                  web application
-                  where the user can log in, analyze the stocks trend, and purchase and sell.
-                  We intended the web application for users who wants to practice hand on experience on crypto stocks as
-                  they can practice playing the stocks without actually spending money in it.
-                  We utilized reactjs, material UI for frontend, nodejs and expressJs for backend and mysql, AWS for
-                  database and storage management.
-                </p>
-              </li>
 
-              <li class="grid gap-1 pb-md">
-                <h4 class="text-primary-darker-theme">3 consecutive terms of Dean's List in NYP</h4>
-                <i class="text-xs">2023 - 2024</i>
-                <p class="text-md">
-                  During 3 semesters of NYP, I was awarded Dean's List as I achieved GPA of 3.83, 3.87 and 3.89
-                  respectively.
-                </p>
-              </li>
 
-            </ul>
-          </div>
-        </div>
     </section>
-    <section id="projects" class="py-md grid gap-2 ">
+    <section id="projects" class="grid gap-2 pb-2xl">
       <h2 class="uppercase">Projects</h2>
       <div class=" grid gap-2">
         <a href="https://github.com/Riley1101/my-home" target="_blank" class="link-none text-base">
           <div class="glass-card">
-            <img src="./public/me_in_museum.jpg" alt="">
+            <img src="./public/myhome.png" alt="">
             <div>
               <h5>RealEstate Marketplace Web Application </h5>
               <div class="tags">
-                <span>nextjs</span>
-                <span>tailwindcss</span>
-                <span>typescript</span>
-                <span>payloadcms</span>
+                <span>Nextjs</span>
+                <span>Tailwindcss</span>
+                <span>Typescript</span>
+                <span>Supabase</span>
+
+                <span>Payloadcms</span>
               </div>
               <p>
-                This project is me and my friend's and I am contributing on it as a frontend developer. I worked on
-                several webpages for that
-                using tools displayed above. </p>
+                This is a collaborative project between my friend and me, where I’m contributing as a front-end
+                developer. I’ve built several key pages using the tools and technologies listed above. The project is a
+                real-world web application tailored for users in Myanmar, enabling them to explore properties and
+                connect directly with owners to buy, sell, or rent — without the risk of scams or involvement of third
+                parties. We’re excited to be launching the platform publicly in July.
+              </p>
             </div>
           </div>
         </a>
 
-        <div class="glass-card">
-          <img src="./public/me_in_museum.jpg" alt="">
-          <div>
-            <h5>RealEstate Marketplace Web Application </h5>
-            <div class="tags">
-              <span>nextjs</span>
-              <span>tailwindcss</span>
-              <span>typescript</span>
-              <span>payloadcms</span>
+        <a href="https://mayshecodes.vercel.app/" target="_blank" class="link-none text-base">
+          <div class="glass-card">
+            <img src="./public/portfolio.png" alt="">
+            <div>
+              <h5>My Portfolio</h5>
+              <div class="tags">
+                <span>Nextjs</span>
+                <span>Tailwindcss</span>
+                <span>Typescript</span>
+                <span>NotionAPI</span>
+              </div>
+              <p>
+                This portfolio site is integrated with the Notion API, allowing me to publish and update blog content
+                seamlessly through the Notion app — making content management fast, efficient, and user-friendly.
+              </p>
             </div>
-            <p>
-              This project is me and my friend's and I am contributing on it as a frontend developer. I worked on
-              several webpages for that
-              using tools displayed above. </p>
           </div>
-        </div>
+        </a>
+        <a href="https://gussy.vercel.app/" target="_blank" class="link-none text-base">
+          <div class="glass-card">
+            <img src="./public/gussy.png" alt="">
+            <div>
+              <h5>Clothing Website</h5>
+              <div class="tags">
+                <span>Javascript</span>
+                <span>HTML</span>
+                <span>CSS</span>
+
+              </div>
+              <p>
+
+
+                This is a practice project for a clothing store website, designed to simulate a real e-commerce
+                experience. It includes features like user sign-in/sign-out, item saving, cart management, and checkout
+                functionality.
+
+              </p>
+            </div>
+          </div>
+        </a>
+
 
       </div>
 
@@ -294,6 +423,12 @@ Objective:I’m always looking for opportunities to push my limits, learn new te
     <section id="footer" class="grid w-full py-md">
       <div class="self-center justify-self-center">created by MayThanHsuAung@2025</div>
     </section>
+  </div>
 </body>
 
+
+
+
+
 </html>
+                                                                                                                                                                                                                                                                                                                                                                                                                                            </html>

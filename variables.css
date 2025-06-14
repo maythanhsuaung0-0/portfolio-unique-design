@@ -19,7 +19,7 @@
   --pink-primary-strong: #db2777;
   /* pink-600 */
 
-  /* Text and surface */
+  /* Text and s#0C0A09hjurface */
   --pink-text-heading: #be185d;
   /* pink-700 */
   --pink-text-body: #9d174d;
@@ -34,7 +34,8 @@
   --color-text: #1f1f1f;
   --color-text-muted: #6b6b6b;
   /* common colors */
-  --base:#1E1E1E ;
+  --base: #1E1E1E;
+  --paragraph: #2f2f2f;
   /* Typography */
   --font-family-sans: 'Inter', sans-serif;
   --font-family-mono: 'Fira Code', monospace;
@@ -43,7 +44,7 @@
   /* 14px */
   --fontsize-sm: 1rem;
   /* 16px */
-  --fontsize-md: 1.125rem;
+  --fontsize-md: 1.1rem;
   /* 18px */
   --fontsize-lg: 1.25rem;
   /* 20px */
@@ -63,18 +64,18 @@
   --line-height-tight: 1.25;
   --line-height-normal: 1.5;
   --line-height-loose: 1.75;
-
+  --font-weight-thin: 300;
   --font-weight-normal: 400;
-  --font-weight-medium: 500;
+  --font-weight-medium: 600;
   --font-weight-bold: 700;
 
   /* Spacing */
   --space-0: 0;
-  --space-1: 0.2rem;
+  --space-1: 0.5rem;
   /* 8px */
-  --space-2: 0.5rem;
+  --space-2: 1rem;
   /* 16px */
-  --space-3: 1rem;
+  --space-3: 1.5rem;
   /* 24px */
   --space-4: 2rem;
   /* 32px */
@@ -147,9 +148,9 @@
   --width-md: 8rem;
   /* 256px */
   --width-lg: 16rem;
-  --width-xl:20rem;
+  --width-xl: 20rem;
   /* 384px */
-  --width-xxl: 32rem;
+  --width-xxl: 22rem;
   /* 512px */
 
   /* Percentages */
