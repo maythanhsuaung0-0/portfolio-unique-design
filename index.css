@@ -69,6 +69,10 @@ h6 {
 .leading-1 {
   line-height: 1.6rem;
 }
+.leading-2 {
+  line-height: 1.8rem;
+}
+
 
 .flex {
   display: flex;
